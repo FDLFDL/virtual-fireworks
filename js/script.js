@@ -28,9 +28,9 @@ const GRAVITY = 0.9;
 let simSpeed = 1;
 
 function getDefaultScaleFactor() {
-	if (IS_MOBILE) return 0.5;
+	if (IS_MOBILE) return 0.75;
 	if (IS_HEADER) return 0.75;
-	return 0.5;
+	return 0.75;
 }
 
 
@@ -135,7 +135,7 @@ const store = {
 			autoLaunch: true,
 			finale: true,
 			skyLighting: SKY_LIGHT_NORMAL + '',
-			hideControls: IS_HEADER,
+			hideControls: true,
 			longExposure: false,
 			scaleFactor: getDefaultScaleFactor()
 		}
